@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contacta o infórmate en nuestro Supermercado DIW">
+    <meta name="keywords" content="contacto, supermercado, Alicante, teléfono, email, dirección">
+    <meta name="author" content="Supermercado DIW">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Contacto</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+    </nav>
+<form>
+    <fieldset>
+        <legend>Formulario de contacto</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre" pattern="[a-zA-Z]{1,40}" required autofocus><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" pattern=".+@example\.com" placeholder="Email"><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" max="99" placeholder="Edad"><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" pattern="[0-9]+" placeholder="Telefono"><br>
+
+        <label for="politicaprivacidadcookies">Acepto la política de privacidad y cookies</label>
+        <input type="checkbox" name="politicadeprivacidadcookies" required><br>
+
+        <label for="consulta">Consulta:</label>
+        <textarea id="consulta" name="consulta" rows="4" cols="50" maxlength="500" placeholder="Escribe tu consulta aquí..." required></textarea><br>
+
+        <button id="enviar" name="enviar" type="submit">ENVIAR</button>
+
+    </fieldset>
+</form>
+
+    <section id="datos">
+        <p>Dirección: C/ Mare Nostrum, 123456, Alicante</p>
+        <p>Correo: <a href="mailto:contacto@supermercadoDIW.com">contacto@supermercadoDIW.com</a></p>
+        <p>Teléfono: <a href="tel:+34123456789">+34123456789</a></p>
+    </section>
+</body>
+</html>
